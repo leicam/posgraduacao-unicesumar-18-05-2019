@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.rp.repository.LogRepositoryTest" time="15.401" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Juliano\Aula 04-05-2019\jee-blank-master"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Juliano\Aula 04-05-2019\jee-blank-master"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADM\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\app\ADM\product\11.2.0\client_1\bin;C:\tools\ruby25\bin;C:\Python37\Scripts\;C:\Python37\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\postgresql\10\bin;C:\Program Files\TortoiseGit\bin;C:\tools\php73;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Software\Octave-3.6.4\bin&#13;;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microchip\MPLAB C32 Suite\bin;C:\Program Files\MATLAB\R2017a\runtime\win64;C:\Program Files\MATLAB\R2017a\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Oracle\VirtualBox;C:\Users\ADM\AppData\Local\atom\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;;C:\Users\ADM\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ADM\AppData\Roaming\npm;C:\Users\ADM\AppData\Local\Yarn\bin;C:\tools\Cmder;;."/>
+    <property name="maven.conf" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\ADM"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ADM"/>
+    <property name="java.class.path" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="br.com.rp.repository.LogRepositoryTest" classname="br.com.rp.repository.LogRepositoryTest" time="15.401">
+    <error message="Cannot deploy: vbank.war" type="org.jboss.arquillian.container.spi.client.container.DeploymentException">org.jboss.arquillian.container.spi.client.container.DeploymentException: Cannot deploy: vbank.war
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:83)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:64)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deploy(ArchiveDeployer.java:46)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.deploy(CommonDeployableContainer.java:146)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:161)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:128)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:95)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:80)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:80)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:182)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.Exception: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"vbank.war#vbankpu\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"vbank.war#vbankpu\": javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: EmprestarLivro, for columns: [org.hibernate.mapping.Column(livros)]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"vbank.war#vbankpu\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getActionResult(ServerDeploymentPlanResultFuture.java:134)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getResultFromNode(ServerDeploymentPlanResultFuture.java:123)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:85)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:42)
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.deploy(ServerDeploymentHelper.java:55)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:77)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:64)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deploy(ArchiveDeployer.java:46)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.deploy(CommonDeployableContainer.java:146)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:161)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:128)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:95)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:80)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:80)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:182)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</error>
+    <system-out><![CDATA[log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [DEBUG].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+2019-05-04 16:45:58 DEBUG logging:47 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-05-04 16:45:59 INFO  xnio:93 - XNIO version 3.3.0.Final
+2019-05-04 16:45:59 INFO  nio:55 - XNIO NIO Implementation Version 3.3.0.Final
+2019-05-04 16:45:59 DEBUG nio:429 - Started channel thread 'Remoting "management-client" I/O-1', selector sun.nio.ch.WindowsSelectorImpl@566c6bba
+2019-05-04 16:45:59 INFO  remoting:69 - JBoss Remoting version 4.0.7.Final
+16:46:00,186 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+16:46:00,357 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+16:46:00,435 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+16:46:01,496 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+16:46:01,527 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.4.0.Final
+16:46:01,543 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.4.0.Final
+16:46:01,574 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+16:46:01,605 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+16:46:01,621 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+16:46:01,621 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+16:46:01,621 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+16:46:01,637 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+16:46:01,668 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+16:46:01,668 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+16:46:01,683 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+16:46:01,777 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+16:46:01,793 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.4.0.Final starting
+16:46:01,824 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+16:46:01,902 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+16:46:01,917 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+16:46:02,011 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+16:46:02,011 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+16:46:02,042 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+16:46:02,245 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+16:46:02,245 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.21.Final
+16:46:02,245 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+16:46:02,385 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+16:46:02,417 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+16:46:02,432 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\standalone\deployments
+16:46:02,635 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+16:46:02,666 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,666 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,682 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,682 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,682 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,682 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:02,697 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+16:46:02,869 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+16:46:02,994 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+16:46:03,150 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+16:46:03,150 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+16:46:03,150 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 3276ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+16:46:08,516 INFO  [org.jboss.as.repository] (management-handler-thread - 2) WFLYDR0001: Content added at location D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\standalone\data\content\e1\58d5e65c9c8a4725b501c168f449257d967111\content
+16:46:08,532 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "vbank.war" (runtime-name: "vbank.war")
+16:46:11,355 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for vbankpu
+16:46:11,387 WARN  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0091: -ds.xml file deployments are deprecated. Support may be removed in a future version.
+16:46:11,636 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/vbank]
+16:46:11,636 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 2) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'vbank.war#vbankpu'
+16:46:11,667 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 2) HHH000204: Processing PersistenceUnitInfo [
+	name: vbankpu
+	...]
+16:46:11,699 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment vbank.war
+16:46:11,745 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 2) HHH000412: Hibernate Core {5.0.10.Final}
+16:46:11,745 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 2) HHH000206: hibernate.properties not found
+16:46:11,745 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 2) HHH000021: Bytecode provider name : javassist
+16:46:11,761 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 5.2.4.Final
+16:46:11,792 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 2) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TestEntityRepositoryImpl' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/TestEntityRepositoryImpl!br.com.rp.repository.TestEntityRepository
+	java:app/vbank/TestEntityRepositoryImpl!br.com.rp.repository.TestEntityRepository
+	java:module/TestEntityRepositoryImpl!br.com.rp.repository.TestEntityRepository
+	java:global/vbank/TestEntityRepositoryImpl
+	java:app/vbank/TestEntityRepositoryImpl
+	java:module/TestEntityRepositoryImpl
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LogRemovalTimer' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/LogRemovalTimer!br.com.rp.services.LogRemovalTimer
+	java:app/vbank/LogRemovalTimer!br.com.rp.services.LogRemovalTimer
+	java:module/LogRemovalTimer!br.com.rp.services.LogRemovalTimer
+	java:global/vbank/LogRemovalTimer
+	java:app/vbank/LogRemovalTimer
+	java:module/LogRemovalTimer
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ArquivoService' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/ArquivoService!br.com.rp.services.ArquivoService
+	java:app/vbank/ArquivoService!br.com.rp.services.ArquivoService
+	java:module/ArquivoService!br.com.rp.services.ArquivoService
+	java:global/vbank/ArquivoService
+	java:app/vbank/ArquivoService
+	java:module/ArquivoService
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LogRemovedObserver' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/LogRemovedObserver!br.com.rp.services.LogRemovedObserver
+	java:app/vbank/LogRemovedObserver!br.com.rp.services.LogRemovedObserver
+	java:module/LogRemovedObserver!br.com.rp.services.LogRemovedObserver
+	java:global/vbank/LogRemovedObserver
+	java:app/vbank/LogRemovedObserver
+	java:module/LogRemovedObserver
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PessoaRepository' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/PessoaRepository!br.com.rp.repository.IPessoaRepository
+	java:app/vbank/PessoaRepository!br.com.rp.repository.IPessoaRepository
+	java:module/PessoaRepository!br.com.rp.repository.IPessoaRepository
+	java:global/vbank/PessoaRepository
+	java:app/vbank/PessoaRepository
+	java:module/PessoaRepository
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LogRepositoryImpl' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/LogRepositoryImpl!br.com.rp.repository.LogRepository
+	java:app/vbank/LogRepositoryImpl!br.com.rp.repository.LogRepository
+	java:module/LogRepositoryImpl!br.com.rp.repository.LogRepository
+	java:global/vbank/LogRepositoryImpl
+	java:app/vbank/LogRepositoryImpl
+	java:module/LogRepositoryImpl
+
+16:46:11,839 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'LogService' in deployment unit 'deployment "vbank.war"' are as follows:
+
+	java:global/vbank/LogService!br.com.rp.services.LogService
+	java:app/vbank/LogService!br.com.rp.services.LogService
+	java:module/LogService!br.com.rp.services.LogService
+	java:global/vbank/LogService
+	java:app/vbank/LogService
+	java:module/LogService
+
+16:46:12,057 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:12,073 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+16:46:12,089 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+16:46:12,120 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 2.3.5 (Final)
+16:46:12,167 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = vbank.war_org.h2.Driver_1_4
+16:46:12,369 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 13) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'vbank.war#vbankpu'
+16:46:12,416 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0002: Started client-mappings cache from ejb container
+16:46:12,619 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 13) HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+16:46:12,650 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 13) Envers integration enabled? : true
+16:46:12,853 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 13) MSC000001: Failed to start service jboss.persistenceunit."vbank.war#vbankpu": org.jboss.msc.service.StartException in service jboss.persistenceunit."vbank.war#vbankpu": javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: EmprestarLivro, for columns: [org.hibernate.mapping.Column(livros)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:431)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:398)
+	at org.hibernate.mapping.Property.isValid(Property.java:225)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:595)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:265)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:329)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:443)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 9 more
+
+16:46:12,869 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "vbank.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"vbank.war#vbankpu\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"vbank.war#vbankpu\": javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: EmprestarLivro, for columns: [org.hibernate.mapping.Column(livros)]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"vbank.war#vbankpu\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+16:46:12,869 ERROR [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0021: Deploy of deployment "vbank.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"vbank.war#vbankpu\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"vbank.war#vbankpu\": javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: javax.persistence.PersistenceException: [PersistenceUnit: vbankpu] Unable to build Hibernate SessionFactory
+    Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: EmprestarLivro, for columns: [org.hibernate.mapping.Column(livros)]"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"vbank.war#vbankpu\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+16:46:12,931 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = vbank.war_org.h2.Driver_1_4
+16:46:12,931 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 13) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'vbank.war#vbankpu'
+16:46:12,947 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/vbank]
+16:46:12,947 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 2) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+16:46:13,056 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment vbank.war (runtime-name: vbank.war) in 180ms
+16:46:13,056 INFO  [org.jboss.as.controller] (management-handler-thread - 2) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."vbank.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.WeldInstantiator, service jboss.deployment.unit."vbank.war".component.LogService.WeldInterceptorBindingsService, service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.WeldInstantiator, WFLYCTL0208: ... and 19 more ] 
+      service jboss.deployment.unit."vbank.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.WeldInstantiator, service jboss.deployment.unit."vbank.war".component.LogService.WeldInterceptorBindingsService, WFLYCTL0208: ... and 8 more ] 
+      service jboss.deployment.unit."vbank.war".component.ArquivoService.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.ArquivoService.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./vbank, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.ArquivoService.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.ArquivoService.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./vbank, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovalTimer.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.VIEW."br.com.rp.services.LogRemovedObserver".LOCAL (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRemovedObserver.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START (missing) dependents: [service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.VIEW."br.com.rp.repository.LogRepository".LOCAL (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.LogService.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogService.START] 
+      service jboss.deployment.unit."vbank.war".component.LogService.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.LogService.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.LogService.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogService.START] 
+      service jboss.deployment.unit."vbank.war".component.LogService.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogService.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.LogService.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogService.START] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.VIEW."br.com.rp.repository.IPessoaRepository".LOCAL (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.PessoaRepository.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.VIEW."br.com.rp.repository.TestEntityRepository".LOCAL (missing) dependents: [service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.WeldInstantiator] 
+      service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START] 
+      service jboss.deployment.unit."vbank.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./vbank, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."vbank.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./vbank, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."vbank.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."vbank.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START, service jboss.deployment.unit."vbank.war".component.PessoaRepository.START, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START, service jboss.deployment.unit."vbank.war".WeldStartService, WFLYCTL0208: ... and 5 more ] 
+      service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START, service jboss.deployment.unit."vbank.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START, WFLYCTL0208: ... and 2 more ] 
+      service jboss.naming.context.java.app.vbank.env (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.BeanManager (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.DefaultContextService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.DefaultDataSource (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.EJBContext (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.TimerService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.UserTransaction (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.env (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.env."br.com.rp.repository.impl.AbstractRepositoryImpl".em (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START, service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START, service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.env."br.com.rp.repository.impl.LogInterceptor".repository (missing) dependents: [service jboss.deployment.unit."vbank.war".component.PessoaRepository.START, service jboss.deployment.unit."vbank.war".component.TestEntityRepositoryImpl.START, service jboss.deployment.unit."vbank.war".component.LogRepositoryImpl.START, service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.env."br.com.rp.services.LogRemovalTimer".timerService (missing) dependents: [service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.vbank.vbank.env."br.com.rp.services.LogService".repository (missing) dependents: [service jboss.deployment.unit."vbank.war".component.LogService.START, service jboss.deployment.unit."vbank.war".jndiDependencyService] 
+      service jboss.persistenceunit."vbank.war#vbankpu" (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService, service jboss.deployment.unit."vbank.war".component."org.jboss.arquillian.protocol.servlet.runner.ServletTestRunner".START, service jboss.deployment.unit."vbank.war".component.LogService.START, service jboss.deployment.unit."vbank.war".component.PessoaRepository.START, WFLYCTL0208: ... and 7 more ] 
+      service jboss.undertow.deployment.default-server.default-host./vbank (missing) dependents: [service jboss.deployment.unit."vbank.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./vbank.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./vbank.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."vbank.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./vbank.UndertowDeploymentInfoService] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."vbank.war#vbankpu"
+
+2019-05-04 16:46:13 WARN  ArchiveDeployer:57 - Cannot undeploy: vbank.war
+org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper$ServerDeploymentException: java.lang.Exception: "WFLYCTL0216: Management resource '[(\"deployment\" => \"vbank.war\")]' not found"
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.undeploy(ServerDeploymentHelper.java:114)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.undeploy(ArchiveDeployer.java:55)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.undeploy(CommonDeployableContainer.java:152)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:205)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:185)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeploy(ContainerDeployController.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:119)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:110)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployedDeployment(ContainerDeployController.java:249)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeployManaged(ContainerDeployController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:135)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:115)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterClass(EventTestRunnerAdaptor.java:87)
+	at org.jboss.arquillian.junit.Arquillian$3$1.evaluate(Arquillian.java:204)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:314)
+	at org.jboss.arquillian.junit.Arquillian.access$100(Arquillian.java:46)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:147)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.Exception: "WFLYCTL0216: Management resource '[(\"deployment\" => \"vbank.war\")]' not found"
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getActionResult(ServerDeploymentPlanResultFuture.java:134)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.getResultFromNode(ServerDeploymentPlanResultFuture.java:123)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:85)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ServerDeploymentPlanResultFuture.get(ServerDeploymentPlanResultFuture.java:42)
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.undeploy(ServerDeploymentHelper.java:107)
+	... 82 more
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+mai 04, 2019 4:45:59 PM org.jboss.as.arquillian.container.managed.ManagedDeployableContainer startInternal
+INFORMAÃ‡Ã•ES: Starting container with: ["C:\Program Files\Java\jdk1.8.0_191\bin\java", -Xmx512m, -XX:MaxPermSize=256m, -ea, -Djboss.home.dir=D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final, -Dorg.jboss.boot.log.file=D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\standalone\log\server.log, -Dlogging.configuration=file:/D:/Juliano/Aula%2004-05-2019/wildfly-10.1.0.Final/standalone/configuration/logging.properties, -Djboss.bundles.dir=D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\bundles, -jar, D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\jboss-modules.jar, -mp, D:\Juliano\Aula 04-05-2019\wildfly-10.1.0.Final\modules, org.jboss.as.standalone, -server-config, standalone.xml]
+]]></system-err>
+  </testcase>
+</testsuite>
